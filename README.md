@@ -30,5 +30,53 @@ The aim of this project is to analyze Kolapays' e-commerce data and uncover acti
 3. Which customer signup cohorts have the highest retention rates?
 4. how often are discounts being applied across product categories
 5. Do repeat customers spend more than new customers?
-6. Identify the top 3 spenders per contries and include them into the VIP Loyalty programme
+6. Identify the top 3 spenders per contries and include them into the VIP Loyalty programme.
+
+## Dataset
+
+The dataset used in this project consists of four relational tables:
+
+| Table | Description |
+|---|---|
+| `customers` | Customer profiles including full name, country, and signup date |
+| `orders` | Order-level records with order date and fulfilment status (completed, cancelled, pending) |
+| `order_items` | Line-item detail per order, including product, quantity, unit price, cost price, and discount applied |
+| `products` | Product catalogue with category and cost price |
+
+All names, figures, and records are entirely fictional.
+
+---
+
+## 🛠 Tools Used
+| Tool | Purpose |
+|------|---------|
+| **MySQL** | Exploaratory Data Analysis |
+| **Tableau Public** | Interactive dashboard and data visualization |
+| **Microsoft Word** | Executive summary report |
+| **GitHub** | Version control and project documentation |
+
+---
+
+## SQL Analysis & Queries
+### Q1 Who are our most loyal customers based on completed purchase history?
+```sql
+# Write a query that returns each customer's full name, country, and total number of orders they have placed. Only include customers 
+# who have placed at least 2 orders. Sort the results by order count from highest to lowest.
+
+SELECT
+    customers.full_name,
+    customers.country,
+    count(orders.customer_id) as number_of_orders
+FROM customers
+JOIN
+    orders
+ON customers.customer_id = orders.customer_id
+Where orders.status = 'completed'
+GROUP BY 
+    orders.customer_id,
+    customers.full_name,
+    customers.country
+HAVING COUNT(orders.customer_id) >= 2
+ORDER BY number_of_orders  DESC;
+```
 
