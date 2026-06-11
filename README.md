@@ -25,5 +25,10 @@ The aim of this project is to analyze Kolapays' e-commerce data and uncover acti
 - Build an interactive Tableau dashboard for business stakeholders.
 
 **Key Questions Answered**:
-1. Which product categories generate the most revenue?
+1. Who are our most loyal customers based on completed purchase history?
+2. Which product categories generate the most revenue monthly?
+3. Which customer signup cohorts have the highest retention rates?
+4. how often are discounts being applied across product categories
+5. Do repeat customers spend more than new customers?
+6. Identify the top 3 spenders per contries and include them into the VIP Loyalty programme
 
