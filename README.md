@@ -279,4 +279,13 @@ where country_rank between 1 and 3;
 ---
 
 ## 🔍 Key Findings
+**Breif snapshot of Customer activity**
+| Country | Number of completed orders | Number of Customers | 
+|---------|----------|-------|
+| **India** | 36 | 13  |
+| **Britain** | 28 | 9  |
+| **Canada** | 28 | 11  |
+| **USA** | 12 | 5  |
+| **France** | 6 | 3  |
 
+**Insight**: Insight: India represents the company's strongest market, accounting for the highest number of completed orders (36) from 13 customers. This suggests strong customer engagement and repeat purchasing behavior. In contrast, countries such as France recorded only 6 completed orders, highlighting potential opportunities to improve customer acquisition, engagement, and retention efforts in underperforming markets.
