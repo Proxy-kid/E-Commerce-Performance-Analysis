@@ -321,7 +321,22 @@ where country_rank between 1 and 3;
 
 **Insight**:
 - Half the catalog is discounted: 49.3%(644 of 1,307 items discounted) of all items carry a discount — essentially every second item. At scale, this risks training customers to wait for deals rather than buy at full price.
-- Electronics drives the bulk of exposure: With 166 discounted items and a 5.09% avg depth, Electronics alone accounts for 26% of total discount burden — the single largest margin risk
+- Electronics drives the bulk of exposure: With 166 discounted items and a 5.09% avg depth, Electronics alone accounts for 26% of total discount burden — the single largest margin risk. We could tie it to why it's our leading revenue genarator.
+
+---
+### Customer Behavior Analysis Report (First-time vs Repeat Customers)
+| Customer Type | Orders | Revenue   | Avg Order Value |
+| ------------- | ------ | --------- | --------------- |
+| First-time    | 127    | 66,774.38 | 525.78          |
+| Repeat        | 130    | 58,155.85 | 447.35          |
+
+**Insight**:
+#### A. Repeat customers drive more transactions but less revenue
+  - Repeat customers account for ~50.6% of all orders However, they contribute only ~46.6% of total revenue
+  - This indicates lower revenue efficiency per order from returning users
+#### B. First-time customers are higher value per transaction
+ - Average order value is ~78.43 higher for first-time customers, This suggests stronger initial purchase behavior or higher-intent first purchases
+
 
 
 
