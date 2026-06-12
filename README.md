@@ -288,4 +288,17 @@ where country_rank between 1 and 3;
 | **USA** | 12 | 5  |
 | **France** | 6 | 3  |
 
-**Insight**: Insight: India represents the company's strongest market, accounting for the highest number of completed orders (36) from 13 customers. This suggests strong customer engagement and repeat purchasing behavior. In contrast, countries such as France recorded only 6 completed orders, highlighting potential opportunities to improve customer acquisition, engagement, and retention efforts in underperforming markets.
+**Insight**: India represents the company's strongest market, accounting for the highest number of completed orders (36) from 13 customers. This suggests strong customer engagement and repeat purchasing behavior. In contrast, countries such as France recorded only 6 completed orders, highlighting potential opportunities to improve customer acquisition, engagement, and retention efforts in underperforming markets.
+
+---
+**Brief snapshot of monthly Revenue generated from product category**
+| Order_date | Revenue | Top Category | 
+|---------|----------|-------|
+| 2022-01 | 6379.88 | Electronics  |
+| 2022-02 | 6019.47 | Electronics  |
+| 2022-09 | 3795.49 | Electronics  |
+| 2022-10 | 551.62 | Apparel  |
+| 2022-11 | 1359.32 | Travel  |
+
+**Insight**: Electronics dominated monthly revenue performance, leading all product categories in over 80% of the months analyzed. This highlights its importance as the company's primary revenue-generating category.
+
