@@ -25,7 +25,7 @@ The aim of this project is to analyze Kolapays' e-commerce data and uncover acti
 - Build an interactive Tableau dashboard for business stakeholders.
 
 **Key Questions Answered**:
-1. Who are our most loyal customers based on completed purchase history?
+1. Who are our most engaged customers based on completed purchase history?
 2. Which product categories generate the most revenue monthly?
 3. Which customer signup cohorts have the highest retention rates?
 4. how often are discounts being applied across product categories
@@ -58,7 +58,7 @@ All names, figures, and records are entirely fictional.
 ---
 
 ## SQL Analysis & Queries
-### Q1 Who are our most loyal customers based on completed purchase history?
+### Q1 Who are our most engaged customers based on completed purchase history?
 ```sql
 # I wrote a query that returns each customer's full name, country, and total number of orders they have palced and completed. 
 # I Only included customers who have completed at least 2 orders.
@@ -276,5 +276,7 @@ SELECT
 FROM ranked_customer
 where country_rank between 1 and 3;
 ```
+---
 
+## 🔍 Key Findings
 
