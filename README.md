@@ -192,8 +192,8 @@ GROUP BY s_c.signup_date;
 ### Q4 How often are discounts being applied across product categories 
 ```sql
 -- I wrote a query that returns each product category, the total number of order items in that category, the number of order 
--- items where a discount was applied (discount_pct > 0), and the average discount percentage across all items in that category. 
--- Sorting it by the number of discounted items in descending order.
+-- items where a discount was applied (discount_pct > 0), and the average discount percentage across all items 
+-- in that category. Sorting it by the number of discounted items in descending order.
 
 SELECT 
   p.category,
@@ -279,7 +279,7 @@ where country_rank between 1 and 3;
 ---
 
 ## 🔍 Key Findings
-**Breif snapshot of Customer activity**
+**Brief snapshot of Customer activity**
 | Country | Number of completed orders | Number of Customers | 
 |---------|----------|-------|
 | **India** | 36 | 13  |
