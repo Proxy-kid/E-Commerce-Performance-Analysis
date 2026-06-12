@@ -302,3 +302,26 @@ where country_rank between 1 and 3;
 
 **Insight**: Electronics dominated monthly revenue performance, leading all product categories in over 80% of the months analyzed. This highlights its importance as the company's primary revenue-generating category.
 
+---
+### Customer Retention
+**Insight** 
+- 43% of our cohorts have retained every single customer they acquired. That's a strong signal that when we get the right customers through the door, they stay. The 2023 cohorts reinforce this — all of them are at 80% or above.
+- 2022 is the weak year: Three consecutive cohorts — October, November, December — fell to 50% retention, and April 2022 is one of only two cohorts with zero retention.
+- 2023 was a recovery year, all 2023 cohorts tracked so far show ≥80% retention, with Jan–Jun averaging above 90% — a meaningful rebound from 2022 lows.
+
+--- 
+
+**Brief snapshot showing how discounts are being used**
+| Category | Total_items | Discounted Items |  Avg Discounts |
+|---------|----------|-------|--------|
+| Electronics | 324 | 166  | 5.09  |
+| Fitness | 260 | 127  | 5.04  |
+| Home | 142 | 69  | 5.21  |
+| Travel | 134 | 59  | 4.14  |
+
+**Insight**:
+- Half the catalog is discounted: 49.3%(644 of 1,307 items discounted) of all items carry a discount — essentially every second item. At scale, this risks training customers to wait for deals rather than buy at full price.
+- Electronics drives the bulk of exposure: With 166 discounted items and a 5.09% avg depth, Electronics alone accounts for 26% of total discount burden — the single largest margin risk
+
+
+
