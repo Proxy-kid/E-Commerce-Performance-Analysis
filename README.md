@@ -87,7 +87,7 @@ ORDER BY number_of_orders  DESC;
 WITH M_Revenue AS
 ( 
 SELECT
-    DATE_FORMAT(order_date, '%Y-%m') as order_date,
+    DATE_FORMAT(order_date, '%Y-%m') as order_dates,
     p.category,
     sum(b.quantity * b.unit_price) AS revenue,
     a.status
@@ -99,38 +99,26 @@ JOIN products p
     on b.product_id = p.product_id
 WHERE a.status = 'completed'
 GROUP BY
-    order_date,
+    order_dates,
     category,
     a.status
-),
-sumed_revenue as
-(
-SELECT
-    order_date,
-    category,
-    sum(revenue) grouped_revenue
-FROM M_Revenue
-GROUP BY
-    order_date,
-    category
-ORDER BY order_date, category
 ),
 ranked_revenue AS
 (
 SELECT
-    order_date,
+    order_dates,
     category,
-    grouped_revenue,
+    revenue,
     ROW_NUMBER() OVER(
-        PARTITION BY order_date ORDER BY grouped_revenue DESC) AS ranked_row
-FROM sumed_revenue
+        PARTITION BY order_dates ORDER BY revenue DESC) AS ranked_row
+FROM M_Revenue
 )
 SELECT
-    order_date,
-    ROUND(SUM(grouped_revenue), 2) AS revenue,
+    order_dates,
+    ROUND(SUM(revenue), 2) AS revenue,
     MAX(CASE WHEN ranked_row = 1 THEN category END)AS top_category
 FROM ranked_revenue
-group by order_date;
+group by order_dates;
 ```
 ### Q3 Which customer signup cohorts have the highest retention rates?
 ```sql
