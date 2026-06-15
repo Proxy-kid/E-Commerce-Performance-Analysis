@@ -329,7 +329,7 @@ where country_rank between 1 and 3;
 - Now here's the problem: The moment that same customer returns, their average order drops to $447 — a $78 fall, or 17.5% less per transaction. Revenue from repeat orders is 46.5% of total, even though repeat orders are 50.6% of volume. They're placing more orders but generating disproportionately less money.
 
 **Recommendations**
-Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $78 gap.
+- Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $78 gap.
 
 
 
