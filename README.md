@@ -33,7 +33,8 @@ The aim of this project is to analyze Kolapays' e-commerce data and uncover acti
 6. Identify the top 3 spenders per contries and include them into the VIP Loyalty programme.
 
 ## 📊 Data Source
-The dataset used for this project is available in the `data` folder.
+
+**Dataset**: [Kolapays_schema](data/kolapays_schema.sql)
 
 The dataset used in this project consists of four relational tables:
 
