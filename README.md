@@ -32,7 +32,8 @@ The aim of this project is to analyze Kolapays' e-commerce data and uncover acti
 5. Do repeat customers spend more than new customers?
 6. Identify the top 3 spenders per contries and include them into the VIP Loyalty programme.
 
-## Dataset
+## 📊 Data Source
+The dataset used for this project is available in the `data` folder.
 
 The dataset used in this project consists of four relational tables:
 
@@ -165,7 +166,7 @@ SELECT
     ROUND(AVG(op.order_profit), 2) AS avg_profit_per_order
 FROM signup_cohort sc
 LEFT JOIN retained_customers rc ON sc.customer_id = rc.customer_id
-LEFT JOIN order_profit op       ON op.customer_id = sc.customer_id   -- joins directly to signup_cohort, not through retained_customers
+LEFT JOIN order_profit op       ON op.customer_id = sc.customer_id   -- joins directly to signup_cohort
 GROUP BY sc.signup_month
 ORDER BY sc.signup_month;
 ```
