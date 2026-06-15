@@ -34,7 +34,8 @@ The aim of this project is to analyze Kolapays' e-commerce data and uncover acti
 
 ## 📊 Data Source
 
-**Dataset**: [Kolapays_schema](data/kolapays_schema.sql)
+**Database Schema**: [Kolapays_schema](data/kolapays_schema.sql)
+**SQL Analysis**: [Analysis Query](sql/analysis_query.sql)
 
 The dataset used in this project consists of four relational tables:
 
