@@ -291,7 +291,9 @@ where country_rank between 1 and 3;
 | 2023     |  6 |   29   |  16   |  50.2%   | $397.03   |        
 
 **Insight** 
-
+- ⚠️ An overall retention rate less than 53% means that for every two customers we accquire only one come back. This has been essentially unchanged across 2021, 2022, and 2023. This is a structural pattern that our business has normalized, and we shouldn't.
+- The four cohorts we need to investigate immediately: January 2021, January 2022, April 2022, and March 2023 each retained zero customers. These aren't small cohorts either — some had up to 3–5 customers with no return at all.
+- Cohort sizes remain small. Average cohort is just 5 customers (max: 10). A single churn shifts rates by 10–20pp. Conclusions are directionally useful but should not drive high-confidence policy alone.
 
 --- 
 
