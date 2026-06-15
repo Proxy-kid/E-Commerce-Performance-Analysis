@@ -295,6 +295,10 @@ where country_rank between 1 and 3;
 - The four cohorts we need to investigate immediately: January 2021, January 2022, April 2022, and March 2023 each retained zero customers. These aren't small cohorts either — some had up to 3–5 customers with no return at all.
 - Cohort sizes remain small. Average cohort is just 5 customers (max: 10). A single churn shifts rates by 10–20pp. Conclusions are directionally useful but should not drive high-confidence policy alone.
 
+**Recommendations**
+1. Grow cohort sizes before making structural decisions — at 5 customers per cohort on average, the margin of error is too high for confident policy changes.
+2. Diagnose the four zero-retention cohorts — Jan 2021, Jan/Apr 2022, and Mar 2023 need a root-cause review. What products did those customers buy? What channel did they come from? Patterns here may reveal acquisition or fulfilment issues.
+3. 
 --- 
 
 **Brief snapshot showing how discounts are being used**
@@ -307,7 +311,11 @@ where country_rank between 1 and 3;
 
 **Insight**:
 - Half the catalog is discounted: 49.3%(644 of 1,307 items discounted) of all items carry a discount — essentially every second item. At scale, this risks training customers to wait for deals rather than buy at full price.
-- Electronics drives the bulk of exposure: With 166 discounted items and a 5.09% avg depth, Electronics alone accounts for 26% of total discount burden — the single largest margin risk. We could tie it to why it's our leading revenue genarator.
+- Electronics drives the bulk of exposure: With 166 discounted items and a 5.09% avg depth, Electronics alone accounts for 26% of total discount burden — the single largest margin risk.
+
+**Recommendations**
+1. Audit the Electronics discount strategy — its sheer volume makes it the top margin risk. Test whether reducing the discount rate by even 5pp makes a positive difference
+2. Link discount data to sales conversion and margin outcomes — the current dataset can't tell us if any of this spending is working. That linkage is the critical next step before any strategic decisions.
 
 ---
 ### Customer Behavior Analysis Report (First-time vs Repeat Customers)
@@ -317,11 +325,11 @@ where country_rank between 1 and 3;
 | Repeat        | 130    | 58,155.85 | 447.35          |
 
 **Insight**:
-#### A. Repeat customers drive more transactions but less revenue
-  - Repeat customers account for ~50.6% of all orders However, they contribute only ~46.6% of total revenue
-  - This indicates lower revenue efficiency per order from returning users
-#### B. First-time customers are higher value per transaction
- - Average order value is ~78.43 higher for first-time customers, This suggests stronger initial purchase behavior or higher-intent first purchases
+- Volume is balanced — 130 repeat orders against 127 first-time orders. That near-parity is actually encouraging. What this tells us is that customers are coming back. Acquisition is also performing: first-time buyers are spending at a $525 average. The channels bringing people in are bringing in high-intent customers.
+- Now here's the problem: The moment that same customer returns, their average order drops to $447 — a $78 fall, or 17.5% less per transaction. Revenue from repeat orders is 46.5% of total, even though repeat orders are 50.6% of volume. They're placing more orders but generating disproportionately less money.
+
+**Recommendations**
+Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $78 gap.
 
 
 
