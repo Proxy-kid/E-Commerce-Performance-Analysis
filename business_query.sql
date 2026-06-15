@@ -1,4 +1,3 @@
-use ecommerce_practice;
 # Q1 Who are our most engaged customers based on completed purchase history?
 
 # I wrote a query that returns each customer's full name, country, and total number of orders they have palced and completed. 
