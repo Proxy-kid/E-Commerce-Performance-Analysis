@@ -128,54 +128,46 @@ group by order_dates;
 
 
 -- signup_date for each customer
-WITH signup_cohort AS
-(
-SELECT
-    customer_id,
-    DATE_FORMAT(signup_date, '%Y-%m') signup_date
-FROM customers
+WITH signup_cohort AS (
+    SELECT
+        customer_id,
+        DATE_FORMAT(signup_date, '%Y-%m') AS signup_month
+    FROM customers
 ),
 
--- retained customer
-retained_customers AS
-(
-
-SELECT 
-    customer_id,
-	COUNT(DISTINCT(DATE_FORMAT(order_date, '%Y-%m'))) AS active_dates
-FROM orders
-GROUP BY customer_id
+retained_customers AS (
+    SELECT
+        customer_id,
+        COUNT(DISTINCT DATE_FORMAT(order_date, '%Y-%m')) AS active_months
+    FROM orders
+    WHERE status = 'completed'      
+    GROUP BY customer_id
 ),
 
-order_profit AS
-(
-SELECT
-    o.customer_id,
-    oi.order_id,
-    SUM((oi.unit_price - p.cost_price) * oi.quantity) as order_profit
-FROM orders o
-JOIN order_items oi
-    ON o.order_id = oi.order_id
-JOIN products p 
-    ON p.product_id = oi.product_id
-GROUP BY o.customer_id, oi.order_id
+order_profit AS (
+    SELECT
+        o.customer_id,
+        o.order_id,
+        SUM((oi.unit_price - p.cost_price) * oi.quantity) AS order_profit
+    FROM orders o
+    JOIN order_items oi ON o.order_id = oi.order_id
+    JOIN products p     ON p.product_id = oi.product_id
+    WHERE o.status = 'completed'     
+    GROUP BY o.customer_id, o.order_id
 )
-SELECT 
-    s_c.signup_date,
-    COUNT(DISTINCT s_c.customer_id) unique_customers,
-    COUNT(DISTINCT CASE WHEN COALESCE(r_c.active_dates, 0) >= 2 THEN s_c.customer_id END) AS retained_customer,
-    ROUND(
-	    (100 /COUNT(DISTINCT s_c.customer_id) 
-        * COUNT(DISTINCT CASE WHEN COALESCE(r_c.active_dates, 0) >= 2 THEN s_c.customer_id END))
-        , 2) AS retention_rate_pct,
-	ROUND(AVG(order_profit), 2) AS avg_profit_per_order
 
-FROM signup_cohort s_c
-LEFT JOIN retained_customers r_c
-    ON s_c.customer_id = r_c.customer_id
-LEFT JOIN order_profit o_p
-    ON o_p.customer_id = s_c.customer_id
-GROUP BY s_c.signup_date;
+SELECT
+    sc.signup_month,
+    COUNT(DISTINCT sc.customer_id) AS unique_customers,
+    COUNT(DISTINCT CASE WHEN COALESCE(rc.active_months, 0) >= 2 THEN sc.customer_id END) AS retained_customers,
+    ROUND(100.0 * COUNT(DISTINCT CASE WHEN COALESCE(rc.active_months, 0) >= 2 THEN sc.customer_id END)
+		/ COUNT(DISTINCT sc.customer_id), 2 )  AS retention_rate_pct,
+    ROUND(AVG(op.order_profit), 2) AS avg_profit_per_order
+FROM signup_cohort sc
+LEFT JOIN retained_customers rc ON sc.customer_id = rc.customer_id
+LEFT JOIN order_profit op       ON op.customer_id = sc.customer_id   -- joins directly to signup_cohort, not through retained_customers
+GROUP BY sc.signup_month
+ORDER BY sc.signup_month;
 ```
 ### Q4 How often are discounts being applied across product categories 
 ```sql
