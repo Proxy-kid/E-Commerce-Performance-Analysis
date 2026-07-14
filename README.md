@@ -335,6 +335,11 @@ where country_rank between 1 and 3;
 **Recommendations**
 - Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $78 gap.
 
+---
+## Executive Dashboard
+![Executive Dashboard](dashboard/Executive%20Dashboard.png)
+
+
 
 
 
