@@ -8,7 +8,7 @@
 >   
 > Kolapays E-Commerce Analysis is a portfolio project based on a fictional e-commerce company, Kolapays, which sells products across multiple categories to customers in different regions worldwide.
 >
->The project demonstrates how SQL and Tableau can be used together to analyze business data, answer real-world business questions, and generate actionable insights. Using customer, order, and product data, the analysis explores key business metrics such as revenue trends, customer behavior, product performance, and regional sales patterns.
+>The project demonstrates how SQL and Tableau can be used together to analyze business data, answer real-world business questions, and generate actionable insights. This analysis explores key business metrics such as revenue trends, customer behavior, product performance, and regional sales patterns.
 >
 >The goal of this project is to showcase the end-to-end data analytics process—from querying and transforming data with SQL to building interactive dashboards in Tableau—while providing insights that could help the business make informed, data-driven decisions.
 ---
@@ -93,7 +93,7 @@ WITH M_Revenue AS
 SELECT
     DATE_FORMAT(order_date, '%Y-%m') as order_dates,
     p.category,
-    sum(b.quantity * b.unit_price) AS revenue,
+    sum(b.quantity * b.unit_price * (1 - COALESCE(b.discount_pct, 0) / 100.0)) AS revenue,
     a.status
 FROM
 orders a
@@ -128,7 +128,7 @@ group by order_dates;
 ```sql
 # I Wrote a query that groups customers by their signup month (YYYY-MM). For each cohort i showed: the number of customers  
 # who signed up, the number who were retained (ordered in 2+ distinct months), the retention rate as a percentage,  
-# and the average profit per order forthat cohort — where profit per order_item = (unit_price - cost_price) * quantity. 
+# and the average profit per order for that cohort — where profit per order_item = (unit_price - cost_price) * quantity. 
 
 
 -- signup_date for each customer
@@ -206,7 +206,7 @@ WITH categorized_orders AS (
             THEN 'first_order'
             ELSE 'repeat_order'
         END AS category,
-        SUM(oi.unit_price * oi.quantity) AS order_value
+        SUM(oi.unit_price * oi.quantity * (1 - COALESCE(oi.discount_pct, 0) / 100.0)) AS order_value
     FROM orders o
     JOIN order_items oi 
         ON o.order_id = oi.order_id
@@ -234,7 +234,7 @@ SELECT
     c.customer_id,
     c.full_name,
     c.country,
-    round(sum(oi.quantity*oi.unit_price), 2) AS money_spent
+    round(sum((oi.quantity*oi.unit_price) * (1 - COALESCE(oi.discount_pct, 0) / 100.0)), 2) AS money_spent
 FROM customers c
 JOIN orders o
   ON c.customer_id = o.customer_id
@@ -278,11 +278,11 @@ where country_rank between 1 and 3;
 **Brief snapshot of monthly Revenue generated from product category**
 | Order_date | Revenue | Top Category | 
 |---------|----------|-------|
-| 2022-01 | 6379.88 | Electronics  |
-| 2022-02 | 6019.47 | Electronics  |
-| 2022-09 | 3795.49 | Electronics  |
-| 2022-10 | 551.62 | Apparel  |
-| 2022-11 | 1359.32 | Travel  |
+| 2022-01 | 6160.84 | Electronics  |
+| 2022-02 | 5784.80 | Electronics  |
+| 2022-09 | 3686.51 | Electronics  |
+| 2022-10 | 534.29 | Apparel  |
+| 2022-11 | 1306.98 | Travel  |
 
 **Insight**: Electronics dominated monthly revenue performance, leading all product categories in over 80% of the months analyzed. This highlights its importance as the company's primary revenue-generating category.
 
@@ -325,15 +325,15 @@ where country_rank between 1 and 3;
 ### Customer Behavior Analysis Report (First-time vs Repeat Customers)
 | Customer Type | Orders | Revenue   | Avg Order Value |
 | ------------- | ------ | --------- | --------------- |
-| First-time    | 127    | 66,774.38 | 525.78          |
-| Repeat        | 130    | 58,155.85 | 447.35          |
+| First-time    | 127    | 64,012.38 | 504.04          |
+| Repeat        | 130    | 55,149.40 | 424.23          |
 
 **Insight**:
-- Volume is balanced — 130 repeat orders against 127 first-time orders. That near-parity is actually encouraging. What this tells us is that customers are coming back. Acquisition is also performing: first-time buyers are spending at a $525 average. The channels bringing people in are bringing in high-intent customers.
-- Now here's the problem: The moment that same customer returns, their average order drops to $447 — a $78 fall, or 17.5% less per transaction. Revenue from repeat orders is 46.5% of total, even though repeat orders are 50.6% of volume. They're placing more orders but generating disproportionately less money.
+- Volume is balanced — 130 repeat orders against 127 first-time orders. That near-parity is actually encouraging. What this tells us is that customers are coming back. Acquisition is also performing: first-time buyers are spending at a $504 average. The channels bringing people in are bringing in high-intent customers.
+- Now here's the problem: The moment that same customer returns, their average order drops to $424 — a $80 fall, or 18% less per transaction. Revenue from repeat orders is 46% of total, even though repeat orders are 50.5% of volume. They're placing more orders but generating disproportionately less money.
 
 **Recommendations**
-- Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $78 gap.
+- Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $80 gap.
 
 ---
 ## Executive Dashboard
