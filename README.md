@@ -6,8 +6,8 @@
 
 ## 📑 Table of Contents
 - [Project Overview](#project-overview)
-- [Business Task](#-project-objectives)
-- [Business Questions](#-business-questions)
+- [Project Objectives](#-project-objectives)
+- [Business Questions](#business-questions)
 - [Data Source](#-data-source)
 
 > ## Project Overview
