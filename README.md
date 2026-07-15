@@ -12,7 +12,8 @@
 - [Tools Used](#-tools-used)
 - [SQL Analysis & Queries](#sql-analysis--queries)
   - [Q1: Most Engaged Customers](#q1-who-are-our-most-engaged-customers-based-on-completed-purchase-history)
-  - 
+  - [Q2: Top Monthly Revenue Categories](#q2-which-product-categories-generate-the-most-revenue-monthly)
+  - [Q3: Customer Cohort Retention](#q3-which-customer-signup-cohorts-have-the-highest-retention-rates)
 
 > ## Project Overview
 > 
