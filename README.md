@@ -362,18 +362,15 @@ where country_rank between 1 and 3;
 
 ---
 ## Tableau Dashboards
-![Executive Dashboard](dashboard/Executive%20Dashboard.png)
-
----
-![Regional Performance Dashboard](dashboard/Regional%20Performance%20Dashboard.png)
-
----
-![Customer Analytic Dashboard](dashboard/customer%20dashboard%20(1).png)
 <p align="center">
-  <img src="dashboard/Executive%20Dashboard.png" alt="Executive Dashboard" width="600">
+  <img src="dashboard/Executive%20Dashboard.png" alt="Executive Dashboard" width="800">
 </p>
+<p align="center">
 <img src="dashboard/Regional%20Performance%20Dashboard.png" alt="Regional Performance Dashboard" width="800">
+</p>
+<p align="center">
 <img src="dashboard/customer%20dashboard%20(1).png" alt="Customer Analytic Dashboard" width="800">
+</p>
 
 
 
