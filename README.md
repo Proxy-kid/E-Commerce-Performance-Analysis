@@ -5,13 +5,12 @@
 ![Tableau](https://img.shields.io/badge/Tableau-Dashboard-orange)
 
 ## 📑 Table of Contents
-- [Project Overview](**project-overview**)
+- [Project Overview](#project-overview)
 
-> **Project overview**
->   
-> Kolapays E-Commerce Analysis is a portfolio project based on a fictional e-commerce company, Kolapays, which sells products across multiple categories to customers in different regions worldwide.
+> ## Project Overview
+> 
+> Kolapays E-Commerce Analysis is a portfolio project based on a fictional e-commerce company, Kolapays, which sells products across multiple categories to customers in different regions worldwide. The project showcases an end-to-end data analytics workflow using SQL and Tableau.
 >
->The aim of this project is to analyze Kolapays' e-commerce data by demonstrating an end-to-end data analytics workflow. The project covers querying and transforming data using SQL, followed by building interactive dashboards in Tableau to communicate key business insights. The analysis focuses on customer behavior, sales performance, retention, profitability, and product trends, helping identify opportunities for business growth and support data-driven decision-making.
 ---
 
 ## 🎯 Business Task
