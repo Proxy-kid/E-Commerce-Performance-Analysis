@@ -270,79 +270,87 @@ FROM ranked_customer
 where country_rank between 1 and 3;
 ```
 ---
+## 🔍 Key Findings & Recommendations
 
-## 🔍 Key Findings
-**Brief snapshot of Customer activity**
-| Country | Number of completed orders | Number of Customers | 
-|---------|----------|-------|
-| **India** | 36 | 13  |
-| **Britain** | 28 | 9  |
-| **Canada** | 28 | 11  |
-| **USA** | 12 | 5  |
-| **France** | 6 | 3  |
+### 1. Market & Revenue Performance
 
-**Insight**: India represents the company's strongest market, accounting for the highest number of completed orders (36) from 13 customers. This suggests strong customer engagement and repeat purchasing behavior. In contrast, countries such as France recorded only 6 completed orders, highlighting potential opportunities to improve customer acquisition, engagement, and retention efforts in underperforming markets.
+#### 🗺️ Customer Activity Snapshot
 
----
-**Brief snapshot of monthly Revenue generated from product category**
-| Order_date | Revenue | Top Category | 
-|---------|----------|-------|
-| 2022-01 | 6160.84 | Electronics  |
-| 2022-02 | 5784.80 | Electronics  |
-| 2022-09 | 3686.51 | Electronics  |
-| 2022-10 | 534.29 | Apparel  |
-| 2022-11 | 1306.98 | Travel  |
+| Country | Completed Orders | Total Customers | 
+|:---|:---:|:---:|
+| **India** | 36 | 13 |
+| **Britain** | 28 | 9 |
+| **Canada** | 28 | 11 |
+| **USA** | 12 | 5 |
+| **France** | 6 | 3 |
 
-**Insight**: Electronics dominated monthly revenue performance, leading all product categories in over 80% of the months analyzed. This highlights its importance as the company's primary revenue-generating category.
+* **Insight:** India is the strongest market, leading in completed orders (36) and customer volume (13). This indicates strong local engagement and repeat purchasing habits. Conversely, underperforming markets like France (6 orders) present clear opportunities for targeted customer acquisition campaigns.
 
----
-### Yearly Cohort
-| Year | Cohorts | Customer acquired |  Retained  | Avg retention | Avg profit per order |
-|---------|----------|-------|--------|--------|--------|
-| 2021     | 12  |   71   | 38    | 50.3%  | $307.07  |         
-| 2022     | 12  |   50   |  24  |   48.9%  | $315.77  |        
-| 2023     |  6 |   29   |  16   |  50.2%   | $397.03   |        
+#### 📅 Monthly Revenue by Category
 
-**Insight** 
-- ⚠️ An overall retention rate less than 53% means that for every two customers we accquire only one come back. This has been essentially unchanged across 2021, 2022, and 2023. This is a structural pattern that our business has normalized, and we shouldn't.
-- The four cohorts we need to investigate immediately: January 2021, January 2022, April 2022, and March 2023 each retained zero customers. These aren't small cohorts either — some had up to 3–5 customers with no return at all.
-- Cohort sizes remain small. Average cohort is just 5 customers (max: 10). A single churn shifts rates by 10–20pp. Conclusions are directionally useful but should not drive high-confidence policy alone.
+| Month | Total Revenue | Top Performing Category | 
+|:---|:---:|:---|
+| 2022-01 | $6,160.84 | Electronics |
+| 2022-02 | $5,784.80 | Electronics |
+| 2022-09 | $3,686.51 | Electronics |
+| 2022-10 | $534.29 | Apparel |
+| 2022-11 | $1,306.98 | Travel |
 
-**Recommendations**
-1. Grow cohort sizes before making structural decisions — at 5 customers per cohort on average, the margin of error is too high for confident policy changes.
-2. Diagnose the four zero-retention cohorts — Jan 2021, Jan/Apr 2022, and Mar 2023 need a root-cause review. What products did those customers buy? What channel did they come from? Patterns here may reveal acquisition or fulfilment issues.
-3. 
---- 
-
-**Brief snapshot showing how discounts are being used**
-| Category | Total_items | Discounted Items |  Avg Discounts |
-|---------|----------|-------|--------|
-| Electronics | 324 | 166  | 5.09  |
-| Fitness | 260 | 127  | 5.04  |
-| Home | 142 | 69  | 5.21  |
-| Travel | 134 | 59  | 4.14  |
-
-**Insight**:
-- Half the catalog is discounted: 49.3%(644 of 1,307 items discounted) of all items carry a discount — essentially every second item. At scale, this risks training customers to wait for deals rather than buy at full price.
-- Electronics drives the bulk of exposure: With 166 discounted items and a 5.09% avg depth, Electronics alone accounts for 26% of total discount burden — the single largest margin risk.
-
-**Recommendations**
-1. Audit the Electronics discount strategy — its sheer volume makes it the top margin risk. Test whether reducing the discount rate by even 5pp makes a positive difference
-2. Link discount data to sales conversion and margin outcomes — the current dataset can't tell us if any of this spending is working. That linkage is the critical next step before any strategic decisions.
+* **Insight:** Electronics heavily dominates financial performance, capturing the top slot in over 80% of the months analyzed. This makes it the core driver of overall business revenue.
 
 ---
-### Customer Behavior Analysis Report (First-time vs Repeat Customers)
-| Customer Type | Orders | Revenue   | Avg Order Value |
-| ------------- | ------ | --------- | --------------- |
-| First-time    | 127    | 64,012.38 | 504.04          |
-| Repeat        | 130    | 55,149.40 | 424.23          |
 
-**Insight**:
-- Volume is balanced — 130 repeat orders against 127 first-time orders. That near-parity is actually encouraging. What this tells us is that customers are coming back. Acquisition is also performing: first-time buyers are spending at a $504 average. The channels bringing people in are bringing in high-intent customers.
-- Now here's the problem: The moment that same customer returns, their average order drops to $424 — a $80 fall, or 18% less per transaction. Revenue from repeat orders is 46% of total, even though repeat orders are 50.5% of volume. They're placing more orders but generating disproportionately less money.
+### 2. Yearly Cohort Retention Analysis
 
-**Recommendations**
-- Introduce post-purchase upsell and cross-sell touchpoints — if repeat customers are buying fewer or cheaper items, product recommendations at checkout or in follow-up emails are the most direct lever to close the $80 gap.
+| Year | Active Cohorts | Customers Acquired | Retained | Avg. Retention | Avg. Profit / Order |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| 2021 | 12 | 71 | 38 | 50.3% | $307.07 | 
+| 2022 | 12 | 50 | 24 | 48.9% | $315.77 | 
+| 2023 | 6 | 29 | 16 | 50.2% | $397.03 | 
+
+#### 💡 Cohort Insights
+* **Stagnant Retention:** Overall retention stays below 53% across 2021–2023. For every two customers acquired, only one returns. This structural baseline needs active strategic intervention.
+* **Critical Drops:** Four specific cohorts (Jan 2021, Jan 2022, Apr 2022, and Mar 2023) experienced a **0% retention rate**, keeping zero return customers despite healthy initial cohort sizes (3–5 buyers).
+* **Sample Size Constraint:** Average monthly cohorts are small (5 customers, max 10). Because a single user's churn skews metrics by 10–20 percentage points, these metrics should be treated as directional rather than absolute.
+
+#### 🛠️ Cohort Recommendations
+1. **Increase Sample Sizes:** Expand customer acquisition to build larger cohorts before implementing massive structural policy changes.
+2. **Perform Root-Cause Reviews:** Audit the zero-retention cohorts to identify shared patterns in purchased items, marketing channels, or fulfillment delays.
+
+---
+
+### 3. Catalog Discount Strategy
+
+| Product Category | Total Items | Discounted Items | Avg. Discount Depth |
+|:---|:---:|:---:|:---:|
+| Electronics | 324 | 166 | 5.09% |
+| Fitness | 260 | 127 | 5.04% |
+| Home | 142 | 69 | 5.21% |
+| Travel | 134 | 59 | 4.14% |
+
+#### 💡 Discount Insights
+* **Margin Erosion:** Nearly half the catalog (49.3%, or 644 of 1,307 items) is heavily discounted. Continuous promotional pricing risks training customers to avoid purchasing at full retail value.
+* **Concentrated Risk:** Electronics drives the heaviest exposure, accounting for 26% of the company's entire discount volume across 166 unique items.
+
+#### 🛠️ Discount Recommendations
+1. **Optimize Electronics Safeguards:** Test lowering the Electronics promotional discount rate by 5 percentage points to see if margin health improves without causing volume drops.
+2. **Map Discounts to Conversions:** Connect promotional events to hard conversion and retention margins to confirm if historical price cuts delivered measurable ROI.
+
+---
+
+### 4. First-Time vs. Repeat Customer Behavior
+
+| Customer Segment | Total Orders | Total Revenue | Avg. Order Value (AOV) |
+|:---|:---:|:---:|:---:|
+| First-time | 127 | $64,012.38 | $504.04 |
+| Repeat | 130 | $55,149.40 | $424.23 |
+
+#### 💡 Segment Insights
+* **Healthy Acquisition Parity:** Volume split is closely balanced (130 repeat vs. 127 first-time orders). Top-of-funnel channels successfully source high-intent initial purchasers with an average order value of $504.04.
+* **The Return Value Gap:** Repeat customers show an 18% decline in transaction value ($80 less per order). While generating 50.5% of total order volume, repeat business accounts for only 46% of total revenue.
+
+#### 🛠️ Segment Recommendations
+1. **Deploy Post-Purchase Upsells:** Launch dedicated cross-selling, post-purchase checkout loops, or specialized email sequences to close the $80 gap and boost repeat transaction values.
 
 ---
 ## Executive Dashboard
