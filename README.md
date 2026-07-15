@@ -22,7 +22,11 @@
   - [Yearly Cohort Retention Analysis](#2-yearly-cohort-retention-analysis)
   - [Catalog Discount Strategy](#3-catalog-discount-strategy)
   - [First-Time vs. Repeat Customer Behavior](#4-first-time-vs-repeat-customer-behavior)
-- [Tableau Dashboards](#tableau-dashboards)
+- [Tableau Dashboards](#-interactive-tableau-dashboards)
+  - [Executive Performance Dashboard](#-executive-performance-dashboard)
+  - [Regional Performance Dashboard](#%EF%B8%8F-regional-performance-dashboard)
+  - [Customer Analytics Dashboard](#-customer-analytics-dashboard)
+
   
 
 
@@ -361,17 +365,24 @@ where country_rank between 1 and 3;
 1. **Deploy Post-Purchase Upsells:** Launch dedicated cross-selling, post-purchase checkout loops, or specialized email sequences to close the $80 gap and boost repeat transaction values.
 
 ---
-## Tableau Dashboards
-<p align="center">
-  <img src="dashboard/Executive%20Dashboard.png" alt="Executive Dashboard" width="800">
-</p>
-<p align="center">
-<img src="dashboard/Regional%20Performance%20Dashboard.png" alt="Regional Performance Dashboard" width="800">
-</p>
-<p align="center">
-<img src="dashboard/customer%20dashboard%20(1).png" alt="Customer Analytic Dashboard" width="800">
-</p>
+## 📊 Interactive Tableau Dashboards
 
+*💡 **Hiring Team Note:** Click any dashboard image layout below to open the fully interactive visualization on Tableau
+
+.*
+
+### 📈 Executive Performance Dashboard
+[![Executive Dashboard](dashboard/Executive%20Dashboard.png)](https://public.tableau.com/views/Kolapays-Ecommerce-Analysis/ExecutiveDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+---
+
+### 🗺️ Regional Performance Dashboard
+[![Regional Performance Dashboard](dashboard/Regional%20Performance%20Dashboard.png)](https://public.tableau.com/views/Kolapays-Ecommerce-Analysis/RegionalPerformanceDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+---
+
+### 👤 Customer Analytics Dashboard
+[![Customer Analytics Dashboard](dashboard/customer%20dashboard%20(1).png)](https://public.tableau.com/views/Kolapays-Ecommerce-Analysis/customerdashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 
