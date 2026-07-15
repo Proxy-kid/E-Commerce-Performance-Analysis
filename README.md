@@ -11,6 +11,8 @@
 - [Data Source](#-data-source)
 - [Tools Used](#-tools-used)
 - [SQL Analysis & Queries](#sql-analysis--queries)
+  - [Q1: Most Engaged Customers](#q1-who-are-our-most-engaged-customers-based-on-completed-purchase-history)
+  - 
 
 > ## Project Overview
 > 
@@ -65,7 +67,7 @@ All names, figures, and records are entirely fictional.
 ---
 
 ## SQL Analysis & Queries
-### Q1 Who are our most engaged customers based on completed purchase history?
+### Q1 Who are our most engaged customers based on completed purchase history
 ```sql
 # I wrote a query that returns each customer's full name, country, and total number of orders they have palced and completed. 
 # I Only included customers who have completed at least 2 orders.
