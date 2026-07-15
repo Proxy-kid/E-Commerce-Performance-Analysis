@@ -17,6 +17,12 @@
   - [Q4: Product Category Discounts](#q4-how-often-are-discounts-being-applied-across-product-categories)
   - [Q5: Repeat vs. New Customer Spend](#q5-do-repeat-customers-spend-more-than-new-customers)
   - [Q6: Top 3 Spenders per Country (VIP)](#q6-identify-the-top-3-spenders-per-countries-and-include-them-into-the-vip-loyalty-programme)
+- [Key Findings & Recommendations](#-key-findings--recommendations)
+  - [Market & Revenue Performance](#1-market--revenue-performance)
+  - [Yearly Cohort Retention Analysis](#2-yearly-cohort-retention-analysis)
+  - [Catalog Discount Strategy](#3-catalog-discount-strategy)
+  - [First-Time vs. Repeat Customer Behavior](#4-first-time-vs-repeat-customer-behavior)
+
 
 > ## Project Overview
 > 
