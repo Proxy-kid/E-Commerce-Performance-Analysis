@@ -14,6 +14,9 @@
   - [Q1: Most Engaged Customers](#q1-who-are-our-most-engaged-customers-based-on-completed-purchase-history)
   - [Q2: Top Monthly Revenue Categories](#q2-which-product-categories-generate-the-most-revenue-monthly)
   - [Q3: Customer Cohort Retention](#q3-which-customer-signup-cohorts-have-the-highest-retention-rates)
+  - [Q4: Product Category Discounts](#q4-how-often-are-discounts-being-applied-across-product-categories)
+  - [Q5: Repeat vs. New Customer Spend](#q5-do-repeat-customers-spend-more-than-new-customers)
+  - [Q6: Top 3 Spenders per Country (VIP)](#q6-identify-the-top-3-spenders-per-countries-and-include-them-into-the-vip-loyalty-programme)
 
 > ## Project Overview
 > 
@@ -89,7 +92,7 @@ GROUP BY
 HAVING COUNT(orders.customer_id) >= 2
 ORDER BY number_of_orders  DESC;
 ```
-### Q2 Which product categories generate the most revenue monthly?
+### Q2 Which product categories generate the most revenue monthly
 ```sql
 # I wrote a query that showed, for each month (formatted as YYYY-MM), the total revenue from completed orders only,
 # the total number of completed orders, and the top-earning product category for that month. 
@@ -130,7 +133,7 @@ SELECT
 FROM ranked_revenue
 group by order_dates;
 ```
-### Q3 Which customer signup cohorts have the highest retention rates?
+### Q3 Which customer signup cohorts have the highest retention rates
 ```sql
 # I Wrote a query that groups customers by their signup month (YYYY-MM). For each cohort i showed: the number of customers  
 # who signed up, the number who were retained (ordered in 2+ distinct months), the retention rate as a percentage,  
@@ -228,7 +231,7 @@ SELECT
 FROM categorized_orders
 GROUP BY category;
 ```
-### Q6 Identify the top 3 spenders per contries and include them into the VIP Loyalty programme.
+### Q6 Identify the top 3 spenders per countries and include them into the VIP Loyalty programme.
 ``` sql
 # This query returns the top 3 customers by total spend (completed orders only) within each country. Including their full name, 
 # country, total spend rounded to 2 decimal places, and their rank within their country. If two customers tie on spend, 
