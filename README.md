@@ -22,6 +22,8 @@
   - [Yearly Cohort Retention Analysis](#2-yearly-cohort-retention-analysis)
   - [Catalog Discount Strategy](#3-catalog-discount-strategy)
   - [First-Time vs. Repeat Customer Behavior](#4-first-time-vs-repeat-customer-behavior)
+- [Tableau Dashboards](#tableau-dashboards)
+  
 
 
 > ## Project Overview
@@ -359,6 +361,7 @@ where country_rank between 1 and 3;
 1. **Deploy Post-Purchase Upsells:** Launch dedicated cross-selling, post-purchase checkout loops, or specialized email sequences to close the $80 gap and boost repeat transaction values.
 
 ---
+## Tableau Dashboards
 ## Executive Dashboard
 ![Executive Dashboard](dashboard/Executive%20Dashboard.png)
 
