@@ -9,6 +9,8 @@
 - [Project Objectives](#-project-objectives)
 - [Business Questions](#business-questions)
 - [Data Source](#-data-source)
+- [Tools Used](#-tools-used)
+- [SQL Analysis & Queries](#sql-analysis-&-queries)
 
 > ## Project Overview
 > 
