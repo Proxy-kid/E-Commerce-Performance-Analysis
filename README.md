@@ -369,6 +369,10 @@ where country_rank between 1 and 3;
 
 ---
 ![Customer Analytic Dashboard](dashboard/customer%20dashboard%20(1).png)
+<p align="center">
+  <img src="dashboard/Executive%20Dashboard.png" alt="Executive Dashboard" width="600">
+</p>
+
 
 
 
