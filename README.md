@@ -6,7 +6,8 @@
 
 ## 📑 Table of Contents
 - [Project Overview](#project-overview)
-- [Business Task](#-business-task)
+- [Business Task](#-project-objectives)
+- [Business Questions](#-business-questions)
 - [Data Source](#-data-source)
 
 > ## Project Overview
@@ -15,7 +16,7 @@
 >
 ---
 
-## 🎯 Business Task
+## 🎯 Project Objectives
 **Specific Objectives**:
 - Analyze sales performance and revenue trends over time.
 - Identify the highest-performing product categories.
@@ -24,7 +25,7 @@
 - Assess regional sales performance across different markets.
 - Build an interactive Tableau dashboard for business stakeholders.
 
-**Key Questions Answered**:
+## Business Questions
 1. Who are our most engaged customers based on completed purchase history?
 2. Which product categories generate the most revenue monthly?
 3. Which customer signup cohorts have the highest retention rates?
