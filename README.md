@@ -6,7 +6,7 @@
 
 ## 📑 Table of Contents
 - [Project Overview](#project-overview)
-- [Business Task](#business-task)
+- [Business Task](#-business-task)
 - [Data Source](#-data-source)
 
 > ## Project Overview
