@@ -372,7 +372,8 @@ where country_rank between 1 and 3;
 <p align="center">
   <img src="dashboard/Executive%20Dashboard.png" alt="Executive Dashboard" width="600">
 </p>
-<img src="dashboard/Regional%20Performance%20Dashboard.png" alt="Regional Performance Dashboard" width="600">
+<img src="dashboard/Regional%20Performance%20Dashboard.png" alt="Regional Performance Dashboard" width="800">
+<img src="dashboard/customer%20dashboard%20(1).png" alt="Customer Analytic Dashboard" width="800">
 
 
 
