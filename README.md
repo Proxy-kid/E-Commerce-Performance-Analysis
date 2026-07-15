@@ -362,15 +362,12 @@ where country_rank between 1 and 3;
 
 ---
 ## Tableau Dashboards
-## Executive Dashboard
 ![Executive Dashboard](dashboard/Executive%20Dashboard.png)
 
 ---
-## Regional Performance Dashboard
 ![Regional Performance Dashboard](dashboard/Regional%20Performance%20Dashboard.png)
 
 ---
-## Customer Analytics Dashboard
 ![Customer Analytic Dashboard](dashboard/customer%20dashboard%20(1).png)
 
 
