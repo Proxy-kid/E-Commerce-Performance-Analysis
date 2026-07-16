@@ -104,6 +104,16 @@ GROUP BY
 HAVING COUNT(orders.customer_id) >= 2
 ORDER BY number_of_orders  DESC;
 ```
+#### 📊 Expected Query Output
+|  full_name, | country, | number_of_orders |   
+|-------------|----------|------------------|
+| Olivia Johnson,  | BR,    | 6              | 
+| Chris  White,    | IN,    | 6              |   
+| Sam     Brown,    | DE,    | 5              |   
+| Eve    Miller,   | AU,    | 4              |   
+| Alice   Moore,    | ZA,    | 4              |  
+| Alice   Taylor,   | BR,    | 4              |   
+
 ### Q2 Which product categories generate the most revenue monthly
 ```sql
 # I wrote a query that showed, for each month (formatted as YYYY-MM), the total revenue from completed orders only,
@@ -145,6 +155,17 @@ SELECT
 FROM ranked_revenue
 group by order_dates;
 ```
+#### 📊 Expected Query Output
+| # order_dates | revenue | top_category |
+|---------------|---------|--------------|
+| 2022-01       | 6160.84 | Electronics  |
+| 2022-02       | 5784.80 | Electronics  |
+| 2022-03       | 9091.86 | Electronics  |
+| 2022-04       | 5790.13 | Electronics  |
+| 2022-05       | 5108.69 | Electronics  |
+| 2022-06       | 4285.19 | Electronics  |
+| 2022-07       | 4209.90 | Travel       |
+
 ### Q3 Which customer signup cohorts have the highest retention rates
 ```sql
 # I Wrote a query that groups customers by their signup month (YYYY-MM). For each cohort i showed: the number of customers  
@@ -194,6 +215,15 @@ LEFT JOIN order_profit op       ON op.customer_id = sc.customer_id   -- joins di
 GROUP BY sc.signup_month
 ORDER BY sc.signup_month;
 ```
+#### 📊 Expected Query Output
+| # signup_month | unique_customers | retained_customers | retention_rate_pct | avg_profit_per_order |
+|----------------|------------------|--------------------|--------------------|----------------------|
+| 2021-01        | 1                | 0                  | 0.00               | 289.95               |
+| 2021-02        | 5                | 3                  | 60.00              | 277.32               |
+| 2021-03        | 7                | 6                  | 85.71              | 274.88               |
+| 2021-04        | 7                | 2                  | 28.57              | 391.78               |
+| 2021-05        | 10               | 7                  | 70.00              | 315.80               |
+
 ### Q4 How often are discounts being applied across product categories 
 ```sql
 -- I wrote a query that returns each product category, the total number of order items in that category, the number of order 
@@ -212,6 +242,18 @@ GROUP BY
     p.category
 ORDER BY discounted_items DESC;
 ```
+#### 📊 Expected Query Output
+| category  | total_items | discounted_items | avg_discount |
+|-------------|-------------|------------------|--------------|
+| Electronics | 324         | 166              | 5.09         |
+| Fitness     | 260         | 127              | 5.04         |
+| Kitchen     | 133         | 71               | 5.23         |
+| Home        | 142         | 69               | 5.21         |
+| Accessories | 133         | 67               | 5.41         |
+| Travel      | 134         | 59               | 4.14         |
+| Footwear    | 106         | 46               | 4.39         |
+| Apparel     | 75          | 39               | 5.73         |
+                                                                                       
 ### Q5 Do repeat customers spend more than new customers?
 ```sql
 # I wrote a query that classified every completed order as either 'first_order' or 'repeat_order' based on whether it is the 
@@ -243,6 +285,11 @@ SELECT
 FROM categorized_orders
 GROUP BY category;
 ```
+#### 📊 Expected Query Output
+| category   | number_order | revenue  | avg_order_value |
+|--------------|--------------|----------|-----------------|
+| first_order  | 127          | 64012.74 | 504.04          |
+| repeat_order | 130          | 55149.40 | 424.23          |
 ### Q6 Identify the top 3 spenders per countries and include them into the VIP Loyalty programme.
 ``` sql
 # This query returns the top 3 customers by total spend (completed orders only) within each country. Including their full name, 
@@ -281,6 +328,16 @@ SELECT
 FROM ranked_customer
 where country_rank between 1 and 3;
 ```
+#### 📊 Brief Snapshot of the Expected Query Output
+
+| full_name    | country | money_spent | country_rank |
+|----------------|---------|-------------|--------------|
+| Eve Miller     | AU      | 2297.91     | 1            |
+| Quinn Thomas   | AU      | 1175.33     | 2            |
+| Chris Garcia   | AU      | 1135.13     | 3            |
+| Olivia Johnson | BR      | 2528.81     | 1            |
+| Chris Moore    | BR      | 2522.79     | 2            |
+| Carol Hall     | BR      | 1325.35     | 3            |
 ---
 ## 🔍 Key Findings & Recommendations
 
