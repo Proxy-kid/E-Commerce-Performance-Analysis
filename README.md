@@ -21,7 +21,7 @@
   - [Market & Revenue Performance](#1-market--revenue-performance)
   - [Yearly Cohort Retention Analysis](#2-yearly-cohort-retention-analysis)
   - [Catalog Discount Strategy](#3-catalog-discount-strategy)
-  - [First-Time vs. Repeat Customer Behavior](#4-first-time-vs-repeat-customer-behavior)
+  - [First-Time vs. Repeat Customer Behaviour](#4-first-time-vs-repeat-customer-behaviour)
 - [Tableau Dashboards](#-interactive-tableau-dashboards)
   - [Executive Performance Dashboard](#-executive-performance-dashboard)
   - [Regional Performance Dashboard](#%EF%B8%8F-regional-performance-dashboard)
