@@ -26,6 +26,7 @@
   - [Executive Performance Dashboard](#-executive-performance-dashboard)
   - [Regional Performance Dashboard](#%EF%B8%8F-regional-performance-dashboard)
   - [Customer Analytics Dashboard](#-customer-analytics-dashboard)
+-  [Repository Structure](#-repository-structure)
 
   
 
@@ -441,7 +442,20 @@ where country_rank between 1 and 3;
 ### 👤 Customer Analytics Dashboard
 [![Customer Analytics Dashboard](dashboard/customer%20dashboard%20(1).png)](https://public.tableau.com/views/Kolapays-Ecommerce-Analysis/customerdashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+## 📁 Repository Structure
 
+```
+E-Commerce-Performance-Analysis/
+│
+├── dashboard/                         		# Screenshots of dashboards
+│   ├── Executive Dashboard.png
+│   ├── Regional Performance Dashboard.png
+│   ├── customer dashboard(1).png
+├── sql/		                         	# Main SQL analysis script
+|   ├── analysis_query.sql
+├── data/                                	# Database schema script
+|   ├── kolapays_schema.sql
+├── README.md                           	# This file
 
 
 
