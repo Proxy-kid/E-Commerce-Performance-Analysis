@@ -399,6 +399,17 @@ where country_rank between 1 and 3;
 ### 👤 Customer Analytics Dashboard
 [![Customer Analytics Dashboard](dashboard/customer%20dashboard%20(1).png)](https://public.tableau.com/views/Kolapays-Ecommerce-Analysis/customerdashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+---
+## 📂 How to Use This Repository
+
+
+### Run the SQL Analysis
+1. Open the data folder and locate kolapays_schema.sql
+2. Run file on a MYSQL Workbench to generate this datase
+3. Open the sql folder and locate analysis_query.sql
+4. Run the script section by section
+5. Review findinds 
+
 ## 📁 Repository Structure
 
 ```
