@@ -371,7 +371,7 @@ where country_rank between 1 and 3;
 
 ---
 
-### 4. First-Time vs. Repeat Customer Behavio
+### 4. First-Time vs. Repeat Customer Behaviour
 #### 💡 Segment Insights
 * **Healthy Acquisition Parity:** Volume split is closely balanced (130 repeat vs. 127 first-time orders). Top-of-funnel channels successfully source high-intent initial purchasers with an average order value of $504.04.
 * **The Return Value Gap:** Repeat customers show an 18% decline in transaction value ($80 less per order). While generating 50.5% of total order volume, repeat business accounts for only 46% of total revenue.
