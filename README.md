@@ -26,8 +26,10 @@
   - [Executive Performance Dashboard](#-executive-performance-dashboard)
   - [Regional Performance Dashboard](#%EF%B8%8F-regional-performance-dashboard)
   - [Customer Analytics Dashboard](#-customer-analytics-dashboard)
--  [Repository Structure](#-repository-structure)
 -  [How to Use This Repository](#-how-to-use-this-repository)
+-  [Repository Structure](#-repository-structure)
+-  [Contact](-contact)
+
 
   
 
@@ -423,7 +425,17 @@ E-Commerce-Performance-Analysis/
 |   ├── kolapays_schema.sql
 ├── README.md                           	# This file
 
+---
 
+## 👤 Contact
+
+**Bassey Akan**  
+Data Analyst | 
+
+📧 basseyikan@gmail.com
+
+
+---
 
 
 
