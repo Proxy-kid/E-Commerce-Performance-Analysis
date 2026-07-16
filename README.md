@@ -28,7 +28,7 @@
   - [Customer Analytics Dashboard](#-customer-analytics-dashboard)
 -  [How to Use This Repository](#-how-to-use-this-repository)
 -  [Repository Structure](#-repository-structure)
--  [Contact](-contact)
+-  [Contact](#-contact)
 
 
   
