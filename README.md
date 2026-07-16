@@ -343,30 +343,10 @@ where country_rank between 1 and 3;
 ## 🔍 Key Findings & Recommendations
 
 ### 1. Market & Revenue Performance
+* **Insight:**
+* Electronics heavily dominates financial performance, capturing the top slot in over 80% of the months analyzed. This makes it the core driver of overall business revenue.
+* India is the strongest market, leading in completed orders (36) and customer volume (13). This indicates strong local engagement and repeat purchasing habits. Conversely, underperforming markets like France (6 orders) present clear opportunities for targeted customer acquisition campaigns.
 
-#### 🗺️ Customer Activity Snapshot
-
-| Country | Completed Orders | Total Customers | 
-|:---|:---:|:---:|
-| **India** | 36 | 13 |
-| **Britain** | 28 | 9 |
-| **Canada** | 28 | 11 |
-| **USA** | 12 | 5 |
-| **France** | 6 | 3 |
-
-* **Insight:** India is the strongest market, leading in completed orders (36) and customer volume (13). This indicates strong local engagement and repeat purchasing habits. Conversely, underperforming markets like France (6 orders) present clear opportunities for targeted customer acquisition campaigns.
-
-#### 📅 Monthly Revenue by Category
-
-| Month | Total Revenue | Top Performing Category | 
-|:---|:---:|:---|
-| 2022-01 | $6,160.84 | Electronics |
-| 2022-02 | $5,784.80 | Electronics |
-| 2022-09 | $3,686.51 | Electronics |
-| 2022-10 | $534.29 | Apparel |
-| 2022-11 | $1,306.98 | Travel |
-
-* **Insight:** Electronics heavily dominates financial performance, capturing the top slot in over 80% of the months analyzed. This makes it the core driver of overall business revenue.
 
 ---
 
