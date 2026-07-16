@@ -343,21 +343,12 @@ where country_rank between 1 and 3;
 ## 🔍 Key Findings & Recommendations
 
 ### 1. Market & Revenue Performance
-* **Insight:**
+**Insight:**
 * Electronics heavily dominates financial performance, capturing the top slot in over 80% of the months analyzed. This makes it the core driver of overall business revenue.
 * India is the strongest market, leading in completed orders (36) and customer volume (13). This indicates strong local engagement and repeat purchasing habits. Conversely, underperforming markets like France (6 orders) present clear opportunities for targeted customer acquisition campaigns.
-
-
 ---
 
 ### 2. Yearly Cohort Retention Analysis
-
-| Year | Active Cohorts | Customers Acquired | Retained | Avg. Retention | Avg. Profit / Order |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| 2021 | 12 | 71 | 38 | 50.3% | $307.07 | 
-| 2022 | 12 | 50 | 24 | 48.9% | $315.77 | 
-| 2023 | 6 | 29 | 16 | 50.2% | $397.03 | 
-
 #### 💡 Cohort Insights
 * **Stagnant Retention:** Overall retention stays below 53% across 2021–2023. For every two customers acquired, only one returns. This structural baseline needs active strategic intervention.
 * **Critical Drops:** Four specific cohorts (Jan 2021, Jan 2022, Apr 2022, and Mar 2023) experienced a **0% retention rate**, keeping zero return customers despite healthy initial cohort sizes (3–5 buyers).
@@ -370,14 +361,6 @@ where country_rank between 1 and 3;
 ---
 
 ### 3. Catalog Discount Strategy
-
-| Product Category | Total Items | Discounted Items | Avg. Discount Depth |
-|:---|:---:|:---:|:---:|
-| Electronics | 324 | 166 | 5.09% |
-| Fitness | 260 | 127 | 5.04% |
-| Home | 142 | 69 | 5.21% |
-| Travel | 134 | 59 | 4.14% |
-
 #### 💡 Discount Insights
 * **Margin Erosion:** Nearly half the catalog (49.3%, or 644 of 1,307 items) is heavily discounted. Continuous promotional pricing risks training customers to avoid purchasing at full retail value.
 * **Concentrated Risk:** Electronics drives the heaviest exposure, accounting for 26% of the company's entire discount volume across 166 unique items.
@@ -388,13 +371,7 @@ where country_rank between 1 and 3;
 
 ---
 
-### 4. First-Time vs. Repeat Customer Behavior
-
-| Customer Segment | Total Orders | Total Revenue | Avg. Order Value (AOV) |
-|:---|:---:|:---:|:---:|
-| First-time | 127 | $64,012.38 | $504.04 |
-| Repeat | 130 | $55,149.40 | $424.23 |
-
+### 4. First-Time vs. Repeat Customer Behavio
 #### 💡 Segment Insights
 * **Healthy Acquisition Parity:** Volume split is closely balanced (130 repeat vs. 127 first-time orders). Top-of-funnel channels successfully source high-intent initial purchasers with an average order value of $504.04.
 * **The Return Value Gap:** Repeat customers show an 18% decline in transaction value ($80 less per order). While generating 50.5% of total order volume, repeat business accounts for only 46% of total revenue.
