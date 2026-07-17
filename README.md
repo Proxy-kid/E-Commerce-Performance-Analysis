@@ -63,17 +63,9 @@
 
 **SQL Analysis**: [Analysis Query](sql/analysis_query.sql)
 
-The dataset used in this project consists of four relational tables:
 ## 🗄️ Relational Database Architecture (ERD)
+The dataset used in this project consists of four relational tables:
 ![Kolapays Database ERD](data/eer_diagram.png)
-
-
-| Table | Description |
-|---|---|
-| `customers` | Customer profiles including full name, country, and signup date |
-| `orders` | Order-level records with order date and fulfilment status (completed, cancelled, pending) |
-| `order_items` | Line-item detail per order, including product, quantity, unit price, cost price, and discount applied |
-| `products` | Product catalogue with category and cost price |
 
 All names, figures, and records are entirely fictional.
 
