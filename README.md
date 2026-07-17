@@ -9,7 +9,7 @@
 - [Project Objectives](#-project-objectives)
 - [Business Questions](#business-questions)
 - [Data Source](#-data-source)
-- [Relational Database Architecture](#-relational-database-architecture) 
+- [Relational Database Architecture](#%EF%B8%8F-relational-database-architecture)
 - [Tools Used](#-tools-used)
 - [SQL Analysis & Queries](#sql-analysis--queries)
   - [Q1: Most Engaged Customers](#q1-who-are-our-most-engaged-customers-based-on-completed-purchase-history)
