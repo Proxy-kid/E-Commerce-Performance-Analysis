@@ -65,7 +65,7 @@
 
 The dataset used in this project consists of four relational tables:
 ## 🗄️ Relational Database Architecture (ERD)
-![Kolapays Database ERD](data/kolapays_erd.png)
+![Kolapays Database ERD](data/eer_diagram.png)
 
 
 | Table | Description |
