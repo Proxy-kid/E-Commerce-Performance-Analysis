@@ -55,7 +55,7 @@
 3. Which customer signup cohorts have the highest retention rates?
 4. how often are discounts being applied across product categories
 5. Do repeat customers spend more than new customers?
-6. Identify the top 3 spenders per contries and include them into the VIP Loyalty programme.
+6. Identify the top 3 spenders per country and include them into the VIP Loyalty programme.
 
 ## 📊 Data Source
 
@@ -79,7 +79,7 @@ All names, figures, and records are entirely fictional.
 ## 🛠 Tools Used
 | Tool | Purpose |
 |------|---------|
-| **MySQL** | Exploaratory Data Analysis |
+| **MySQL** | Exploratory Data Analysis |
 | **Tableau Public** | Interactive dashboard and data visualization |
 | **GitHub** | Version control and project documentation |
 
@@ -293,7 +293,7 @@ GROUP BY category;
 |--------------|--------------|----------|-----------------|
 | first_order  | 127          | 64012.74 | 504.04          |
 | repeat_order | 130          | 55149.40 | 424.23          |
-### Q6 Identify the top 3 spenders per countries and include them into the VIP Loyalty programme.
+### Q6 Identify the top 3 spenders per country and include them into the VIP Loyalty programme.
 ``` sql
 # This query returns the top 3 customers by total spend (completed orders only) within each country. Including their full name, 
 # country, total spend rounded to 2 decimal places, and their rank within their country. If two customers tie on spend, 
@@ -405,10 +405,10 @@ where country_rank between 1 and 3;
 ## 📂 How to Use This Repository
 ### Run the SQL Analysis
 1. Open the `data` folder and locate `kolapays_schema.sql`
-2. Run file on a MySQL Workbench to generate this datase
+2. Run file on a MySQL Workbench to generate this dataset
 3. Open the `sql` folder and locate `analysis_query.sql`
 4. Run the script section by section
-5. Review findinds 
+5. Review findings 
 
 ## 📁 Repository Structure
 ```
