@@ -9,6 +9,7 @@
 - [Project Objectives](#-project-objectives)
 - [Business Questions](#business-questions)
 - [Data Source](#-data-source)
+- [Relational Database Architecture](#-relational-database-architecture) 
 - [Tools Used](#-tools-used)
 - [SQL Analysis & Queries](#sql-analysis--queries)
   - [Q1: Most Engaged Customers](#q1-who-are-our-most-engaged-customers-based-on-completed-purchase-history)
@@ -16,7 +17,7 @@
   - [Q3: Customer Cohort Retention](#q3-which-customer-signup-cohorts-have-the-highest-retention-rates)
   - [Q4: Product Category Discounts](#q4-how-often-are-discounts-being-applied-across-product-categories)
   - [Q5: Repeat vs. New Customer Spend](#q5-do-repeat-customers-spend-more-than-new-customers)
-  - [Q6: Top 3 Spenders per Country (VIP)](#q6-identify-the-top-3-spenders-per-countries-and-include-them-into-the-vip-loyalty-programme)
+  - [Q6: Top 3 Spenders per Country (VIP)](#q6-identify-the-top-3-spenders-per-country-and-include-them-into-the-vip-loyalty-programme)
 - [Key Findings & Recommendations](#-key-findings--recommendations)
   - [Market & Revenue Performance](#1-market--revenue-performance)
   - [Yearly Cohort Retention Analysis](#2-yearly-cohort-retention-analysis)
@@ -63,11 +64,10 @@
 
 **SQL Analysis**: [Analysis Query](sql/analysis_query.sql)
 
-## 🗄️ Relational Database Architecture (ERD)
-The dataset used in this project consists of four relational tables:
+## 🗄️ Relational Database Architecture
 ![Kolapays Database ERD](data/eer_diagram.png)
 
-All names, figures, and records are entirely fictional.
+The dataset used in this project consists of four relational tables. All names, figures, and records are entirely fictional.
 
 ---
 
