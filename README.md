@@ -108,14 +108,14 @@ HAVING COUNT(orders.customer_id) >= 2
 ORDER BY number_of_orders  DESC;
 ```
 #### 📊 Brief Snapshot of the Expected Query Output
-|  full_name, | country, | number_of_orders |   
+|  full_name | country | number_of_orders |   
 |-------------|----------|------------------|
-| Olivia Johnson,  | BR,    | 6              | 
-| Chris  White,    | IN,    | 6              |   
-| Sam     Brown,    | DE,    | 5              |   
-| Eve    Miller,   | AU,    | 4              |   
-| Alice   Moore,    | ZA,    | 4              |  
-| Alice   Taylor,   | BR,    | 4              |   
+| Olivia Johnson  | BR    | 6              | 
+| Chris  White    | IN    | 6              |   
+| Sam     Brown    | DE    | 5              |   
+| Eve    Miller   | AU    | 4              |   
+| Alice   Moore    | ZA    | 4              |  
+| Alice   Taylor   | BR    | 4              |   
 
 ### Q2 Which product categories generate the most revenue monthly
 ```sql
