@@ -81,7 +81,6 @@ All names, figures, and records are entirely fictional.
 |------|---------|
 | **MySQL** | Exploaratory Data Analysis |
 | **Tableau Public** | Interactive dashboard and data visualization |
-| **Microsoft Word** | Executive summary report |
 | **GitHub** | Version control and project documentation |
 
 ---
@@ -108,7 +107,7 @@ GROUP BY
 HAVING COUNT(orders.customer_id) >= 2
 ORDER BY number_of_orders  DESC;
 ```
-#### 📊 Expected Query Output
+#### 📊 Brief Snapshot of the Expected Query Output
 |  full_name, | country, | number_of_orders |   
 |-------------|----------|------------------|
 | Olivia Johnson,  | BR,    | 6              | 
@@ -159,7 +158,7 @@ SELECT
 FROM ranked_revenue
 group by order_dates;
 ```
-#### 📊 Expected Query Output
+#### 📊 Brief Snapshot of the Expected Query Output
 | # order_dates | revenue | top_category |
 |---------------|---------|--------------|
 | 2022-01       | 6160.84 | Electronics  |
@@ -219,7 +218,7 @@ LEFT JOIN order_profit op       ON op.customer_id = sc.customer_id   -- joins di
 GROUP BY sc.signup_month
 ORDER BY sc.signup_month;
 ```
-#### 📊 Expected Query Output
+#### 📊 Brief Snapshot of the Expected Query Output
 | # signup_month | unique_customers | retained_customers | retention_rate_pct | avg_profit_per_order |
 |----------------|------------------|--------------------|--------------------|----------------------|
 | 2021-01        | 1                | 0                  | 0.00               | 289.95               |
