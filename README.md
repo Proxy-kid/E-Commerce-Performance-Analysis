@@ -64,6 +64,9 @@
 **SQL Analysis**: [Analysis Query](sql/analysis_query.sql)
 
 The dataset used in this project consists of four relational tables:
+## 🗄️ Relational Database Architecture (ERD)
+![Kolapays Database ERD](data/kolapays_erd.png)
+
 
 | Table | Description |
 |---|---|
